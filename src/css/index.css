@@ -231,6 +231,9 @@
 
 
 
+
+  
+
 .mon-bouton {
     display: inline-block;
     padding: 10px 20px;
@@ -251,12 +254,7 @@
   }
 
   /* Global styles */
-body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  
+
   h1 {
     font-size: 30px;
     margin-bottom: 20px;
@@ -301,51 +299,3 @@ body {
     
   }
   
-  .Phishing p:first-of-type {
-    margin-top: 0;
-  }
-  
-  .Phishing ul {
-    list-style: disc;
-    margin-bottom: 20px;
-  }
-  
-  .Phishing li {
-    margin-bottom: 10px;
-  }
-  
-  .Phishing a {
-    color: #0070c0;
-
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: flex-start;
-	align-content: space-around;
-  }
-  
-  .Phishing a:hover {
-    text-decoration: underline;
-  }
-  
-  @media (max-width: 767px) {
-    .Phishing {
-      padding: 10px;
-    }
-  }
-  .item {
-    display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: flex-start;
-	align-content: space-around;
-}
-  
-  .p,.flex-container{
-    display: flex;
-    justify-items: center;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin-top: 100px;
-  }
