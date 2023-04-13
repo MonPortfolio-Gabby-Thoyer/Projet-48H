@@ -10,8 +10,8 @@ import (
 func Server() {
 	r := mux.NewRouter()
 
-	fs := http.FileServer(http.Dir("./src/css/"))
-	r.PathPrefix("./src/css/").Handler(http.StripPrefix("./src/css/", fs))
+	fs := http.FileServer(http.Dir("./src/"))
+	r.PathPrefix("/src/").Handler(http.StripPrefix("/src/", fs))
 
 	// fscript := http.FileServer(http.Dir("./assets/"))
 	// r.PathPrefix("/assets/").Handler(http.StripPrefix("/assets/", fscript))
