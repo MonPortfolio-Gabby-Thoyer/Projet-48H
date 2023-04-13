@@ -1,23 +1,29 @@
 package challbackend
 
-import (
+import(
 	"fmt"
 	"net/http"
+	"os"
 
 	"github.com/gorilla/mux"
 )
 
 func Server() {
-	r := mux.NewRouter()
+ r := mux.NewRouter()
 
-	fs := http.FileServer(http.Dir("./src/css/"))
-	r.PathPrefix("./src/css/").Handler(http.StripPrefix("./src/css/", fs))
+ str, err := os.Getwd()
 
-	// fscript := http.FileServer(http.Dir("./assets/"))
-	// r.PathPrefix("/assets/").Handler(http.StripPrefix("/assets/", fscript))
+	fmt.Printf("str: %T, %v\n", str, str)
+	fmt.Printf("err: %T, %v\n", err, err)
 
-	r.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		Index(w, r)
+fs := http.FileServer(http.Dir("./src/"))
+r.PathPrefix("/src/").Handler(http.StripPrefix("./src/", fs))
+
+// 	fscript := http.FileServer(http.Dir("./assets/"))
+// r.PathPrefix("/assets/").Handler(http.StripPrefix("/assets/", fscript))
+
+r.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+	Index(w, r)
 	})
 
 	fmt.Println("Le serveur est lancé : http://localhost:8080")
