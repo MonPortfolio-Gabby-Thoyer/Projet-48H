@@ -117,3 +117,16 @@ header{
     margin: -8px; 
     padding-top : 80px;
 }
+
+.bottom {
+    border-top: 2px solid rgb(170, 170, 170);
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.message {
+    font-family: 'Poppins', sans-serif;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-justify: auto;
+}
