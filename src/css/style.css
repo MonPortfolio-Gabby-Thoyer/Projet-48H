@@ -37,14 +37,23 @@ header a{
   margin: 10px;
 }
 
+div p{
+  margin-bottom: 20px;
+}
+
+h3{
+  color: var(--accentuation);
+  margin-bottom: 10px;
+}
+
 #links{
   display: flex;
-  font-size: 18px;
+  font-size: 0.9rem;
   text-decoration: none;
   height: fit-content;
   width: fit-content;
-  margin: 0 auto;
-  margin-right: 0%;
+  margin: 0 0 0 auto;
+  white-space: nowrap;
 }
 
 .redirection_link:after {
@@ -63,9 +72,9 @@ header a{
 }
 
 header img {
+  margin-left: 2rem;
   object-fit: cover;
-  width: 270px;
-  transform: scale(0.6);
+  width: 170px;
 }
 
 
