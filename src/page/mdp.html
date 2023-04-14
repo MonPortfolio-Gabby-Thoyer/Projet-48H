@@ -67,5 +67,70 @@
                 <p><h3>CHANGEZ LES MOTS DE PASSE PAR DÉFAUT DES DIFFÉRENTS SERVICES AUXQUELS VOUS ACCÉDEZ</h3>De nombreux services proposent des mots de passe par défaut que vous n’êtes parfois pas obligé de changer. Ces mots de passe par défaut sont souvent connus des cybercriminels. Aussi, il est important de les remplacer au plus vite par vos propres mots de passe que vous contrôlez.</p>
             </div>
         </div>
+        <div class="mini-container"  style="  width: 100%; display: flex; justify-content: center; align-items: center; border-top: 1px solid #232323; background-color: #232323;">
+          <div class="password-card" style="  width: 400px; height: 300px; margin: 20px 0 100px 0;">
+            <div class="password">
+              <h1 style="color:white; text-decoration: none;">Password Strength</h1>
+            <input id="password" type="password" value="" name="password" class="form-control" onkeyup="isGood(this.value)" style="margin-top: 20px; width: 90%; border-radius: 10px;height: 30px;" />
+                  <small class="help-block" id="password-text"  style="color:white;"></small>
+            </div>
+            <div class="password" style="color:white; margin-top: 20px;">
+              <ul>
+                <li>Uppercase Letters</li>
+                <li>Lowercase Letters</li>
+                <li>Numbers</li>
+                <li>Special Character</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <script>
+          function isGood(password) {
+            let password_strength = document.getElementById("password-text");
+
+            //TextBox left blank.
+            if (password.length == 0) {
+              password_strength.innerHTML = "";
+              return;
+            }
+
+            //Regular Expressions.
+            let regex = new Array();
+            regex.push("[A-Z]"); //Uppercase Alphabet.
+            regex.push("[a-z]"); //Lowercase Alphabet.
+            regex.push("[0-9]"); //Digit.
+            regex.push("[$@$!%*#?&]"); //Special Character.
+
+            let passed = 0;
+
+            //Validate for each Regular Expression.
+            for (let i = 0; i < regex.length; i++) {
+              if (new RegExp(regex[i]).test(password)) {
+                passed++;
+              }
+            }
+
+            //Display status.
+            let strength = "";
+            switch (passed) {
+              case 0:
+              case 1:
+              case 2:
+                strength = "<small class='progress-bar bg-danger' style='width: 40%'>Weak</small>";
+                break;
+              case 3:
+                strength = "<small class='progress-bar bg-warning' style='width: 60%'>Medium</small>";
+                break;
+              case 4:
+                strength = "<small class='progress-bar bg-success' style='width: 100%'>Strong</small>";
+                break;
+
+            }
+            password_strength.innerHTML = strength;
+
+    }
+        </script>
     </body>
 </html>
