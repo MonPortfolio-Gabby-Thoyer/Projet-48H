@@ -4,6 +4,7 @@
   --color-2: #444;
   --color-3: #666;
   --transition: all 0.25s ease 0s;
+  --accentuation : #6C5CE7;
 }
 
 * {
@@ -13,6 +14,9 @@
   text-decoration: none;
   font-family: "Poppins", sans-serif;
 }
+body{
+  overflow-x: hidden;
+}
 header{
   display: flex;
   justify-content: center;
@@ -20,16 +24,12 @@ header{
   background-color: #fff;
   color: #000;
   font-family: 'Poppins', sans-serif;
-  padding-top: 20px;
-  padding-bottom: 20px;
   font-size: 20px;
-  margin: -8px;
-  margin-bottom: 10px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-  height: 100px;
+  height: 90px;
 }
 
-a{
+header a{
   color: #6C5CE7;
   text-decoration: none;
   margin: 10px;
@@ -37,7 +37,7 @@ a{
 
 #links{
   display: flex;
-  font-size: 20px;
+  font-size: 18px;
   text-decoration: none;
   height: fit-content;
   width: fit-content;
@@ -46,7 +46,7 @@ a{
 }
 
 .redirection_link:after {
-  border-bottom: 3px solid #6C5CE7;
+  border-bottom: 3px solid var(--accentuation);
   content: "";
   display: block;
   margin: 0 auto 0;
@@ -55,16 +55,17 @@ a{
 }
 .redirection_link:hover:after {
   transition: width 200ms ease-in-out 0s;
-  background-color: #6C5CE7;
+  background-color: var(--accentuation);
   width: 100%;
   height: fit-content;
 }
 
-img {
-  padding: 10px;
+header img {
+  object-fit: cover;
   width: 270px;
-  height: 120%;
+  transform: scale(0.6);
 }
+
 .container {
   background: rgb(255, 255, 255);
   height: auto;
@@ -120,7 +121,8 @@ h1 i {
 button {
   width: 120px;
   height: 40px;
-  border: 1px solid #000;
+  color: var(--accentuation);
+  border: 1px solid var(--accentuation);
   font-size: 15px;
   text-decoration: none;
   text-transform: uppercase;
@@ -153,7 +155,7 @@ button:hover {
 }
 button:hover::after {
   transform: scale(2) rotate(180deg);
-  background: #000;
+  background: var(--accentuation);
   box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.2), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5), inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
 }
 
@@ -181,6 +183,9 @@ footer {
   font-weight: 500;
   text-transform: capitalize;
   line-height: 3rem;
+}
+.footer-content h3 span{
+ color: var(--accentuation);
 }
 
 .footer-content p {
@@ -214,66 +219,7 @@ footer {
   width: 20px;
   transition: color 0.4s ease;
 }
-
-.socials a:hover i {
-  color: aqua;
-}
-
-.footer-bottom {
-  background: #000;
-  width: 100vw;
-  padding: 20px;
-  padding-bottom: 40px;
-  text-align: center;
-}
-
-.footer-bottom p {
-  float: left;
-  font-size: 14px;
-  word-spacing: 2px;
-}
-
-.footer-bottom p a {
-  color: #ccc;
-  font-size: 16px;
-  text-decoration: none;
-}
-
-.footer-bottom span {
-  text-transform: uppercase;
-}
-
-.footer-menu {
-  float: right;
-}
-
-.footer-menu ul {
-  display: flex;
-}
-
-.footer-menu ul li {
-  padding-right: 10px;
-  display: block;
-}
-
-.footer-menu ul li a {
-  color: #cfd2d6;
-  text-decoration: none;
-}
-
-.footer-menu ul li a:hover {
-  color: #27bcda;
-}
-
-@media (max-width: 500px) {
-  .footer-bottom p {
-    float: none;
-  }
-
-  .footer-menu ul {
-    display: flex;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    text-align: center;
-  }
+.socials img {
+  height: 35px;
+  width: 35px;
 }
