@@ -1,45 +1,58 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Change Password</title>
-        <link rel="stylesheet" href="./src/css/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" />
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Press+Start+2P&display=swap" rel="stylesheet" />
-    </head>
-    <body>
-      <div class="container">
+  <head>
+    <meta charset="utf-8" />
+    <title>Change Password</title>
+    <link rel="icon" href="/src/resource/image/1.png" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <script>
+      var _paq = window._paq = window._paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="https://calmnasturtium657d82netlifyapp.matomo.cloud/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '1']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src='//cdn.matomo.cloud/calmnasturtium657d82netlifyapp.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="container">
       <header>
-          <img src="./src/resource/image/E.png">
-          
-          <div id="links">
-              <a href="../index.html" class="redirection_link">Accueil</a>    
-              <a href="../index.html" class="redirection_link">Phishing</a>
-              <a href="./src/page/mdp.html" class="redirection_link">Mot de passe</a>
-              <a href="../index.html" class="redirection_link">Stockage</a>
-              <a href="../index.html" class="redirection_link">Achat en ligne</a>
-              <a href="../index.html" class="redirection_link">Réseaux sociaux</a>
-              <a href="../index.html" class="redirection_link">Wifi</a>
-               <a href="../index.html" class="redirection_link">PC libre service</a>
-               <a href="../index.html" class="redirection_link">Téléchargement</a>
-          </div>
+        <img src="./src/resource/image/E.png" />
+
+        <div id="links">
+          <a id="active-link" href="../../index.html" class="redirection_link">Accueil</a>
+          <a href="./src/page/phishing.html" class="redirection_link">Phishing</a>
+          <a href="./src/page/mdp.html" class="redirection_link">Mot de passe</a>
+          <a href="./src/page/stockage.html" class="redirection_link">Stockage</a>
+          <a href="./src/page/online-shopping.html" class="redirection_link">Achat en ligne</a>
+          <a href="./src/page/social-network.html" class="redirection_link">Réseaux sociaux</a>
+          <a href="./src/page/wifi.html" class="redirection_link">Wifi</a>
+          <a href="./src/page/public-computer.html" class="redirection_link">PC libre service</a>
+          <a href="./src/page/download.html" class="redirection_link">Téléchargement</a>
+        </div>
       </header>
-    
+
       <div class="img">
-        <img src="https://www.af-digital.fr/wp-content/uploads/2021/02/Preparer-une-strategie-digitale--1024x598.png" alt="" />
+        <img src="/src/resource/image/clown.png" alt="" />
       </div>
 
       <div class="sous-container">
         <section>
-          <h1><i class="fi fi-rr-globe"></i>INTERNET</h1>
+          <h1><i class="fi fi-rr-ban" style="color: red"></i>ATTENTION</h1>
           <p>
-            Internet est devenu une partie intégrante de notre vie quotidienne, offrant de nombreux avantages en termes d'accès à l'information, de communication, de divertissement et de commerce en
-            ligne. Cependant, il est important de reconnaître que l'utilisation d'Internet comporte également des dangers potentiels. Les cyberattaques, les arnaques en ligne, les violations de la vie
-            privée, la désinformation, la cyberintimidation et d'autres formes de cybercriminalité sont autant de risques qui peuvent menacer la sécurité et la confidentialité des utilisateurs
-            d'Internet. Les enfants, les adolescents, les adultes et les entreprises sont tous exposés à ces dangers, et il est crucial d'être conscient des risques potentiels d'Internet et d'adopter
-            des pratiques de sécurité appropriées pour protéger nos données, notre vie privée et notre sécurité en ligne.
+            PERDU ! Tu t'es fait avoir par un mail de phishing. Le phishing c'es quoi ? Une méthode par les hackeurs pour récupérer vos données en vous envoyant un mail frauduleux. Si vous avez
+            cliqué, vous n'avez pas été assez vigilant et ce site est là pour vous aider ! Vous pouvez vous promener dessus et apprendre les bonnes pratiques sur 8 thématiques dans un format pour
+            aider les étudiants un maximum pour que vous ne vous fassiez plus jamais avoir.
           </p>
         </section>
 
@@ -48,19 +61,18 @@
             <div class="icon-astuce" style="background-color: rgb(209, 10, 126)"><i class="fi fi-rr-fishing-rod"></i></div>
             <h3>Phishing</h3>
             <p>
-              Le phishing est une arnaque sur Internet où les fraudeurs envoient des messages trompeurs pour inciter les gens à divulguer des informations personnelles et financières sensibles, comme
-              des mots de passe ou des numéros de carte de crédit. Les messages peuvent contenir des liens malveillants ou des pièces jointes infectées par des virus informatiques. L'objectif du
-              phishing est de voler des informations pour effectuer des fraudes financières ou voler l'identité de la victime.
+              L'hameçonnage ou phishing est une forme d'escroquerie sur internet. Le fraudeur se fait passer pour un organisme, une personne qu’il n’est pas pour soutirer des informations de
+              connexion, des données personnelles. Il prend différentes formes que l’on peut reconnaître et se protéger.
             </p>
-            <a href="#"><button>More</button></a>
+            <a href="/src/page/phishing.html"><button>More</button></a>
           </div>
 
           <div class="astuce">
             <div class="icon-astuce" style="background-color: rgb(2, 107, 228)"><i class="fi fi-rr-lock"></i></div>
             <h3>Mot de passe</h3>
             <p>
-              La sécurité des mots de passe est un aspect essentiel de la protection de vos comptes en ligne et de la confidentialité de vos informations personnelles. Un mot de passe sécurisé est une
-              première ligne de défense contre les menaces potentielles telles que le piratage, la fraude en ligne et l'accès non autorisé à vos comptes.
+              Les mots de passe sont partout dans notre vie, dans le milieu scolaire, personnel, professionnel… Il est important d’en créer des forts, de savoir où les stocker et comment les protéger.
+              Un mot de passe piraté peut causer beaucoup de dégâts, le protéger est très important.
             </p>
             <a href="./src/page/mdp.html"><button>More</button></a>
           </div>
@@ -69,67 +81,60 @@
             <div class="icon-astuce" style="background-color: rgb(101, 2, 231)"><i class="fi fi-rr-database"></i></div>
             <h3>Stockage</h3>
             <p>
-              la sécurité du stockage des données est essentielle pour assurer la confidentialité, l'intégrité et la disponibilité des informations sensibles stockées. Elle permet de prévenir les
-              pertes de données, l'accès non autorisé, de se conformer aux réglementations et de protéger les données contre les cyberattaques. Il est important d'adopter des meilleures pratiques de
-              sécurité du stockage des données.
+              Le stockage de nos données est important, on nous demande de plus en plus d’y accéder de partout de l’avoir sur nous. Des possibilités sont à votre portée comme les clés usb, les disques
+              durs, le cloud… Il y a toujours des risques de perte de données ou de corruption, il faut rester vigilant.
             </p>
-            <a href="#"><button>More</button></a>
+            <a href="/src/page/stockage.html"><button>More</button></a>
           </div>
 
           <div class="astuce">
             <div class="icon-astuce" style="background-color: rgb(0, 172, 114)"><i class="fi fi-rr-shopping-cart-add"></i></div>
             <h3>Achat en ligne</h3>
             <p>
-              L'achat en ligne est devenu une pratique courante dans notre société connectée d'aujourd'hui. Que ce soit pour acheter des vêtements, des produits électroniques, des articles ménagers ou
-              d'autres biens et services, de plus en plus de personnes choisissent de faire leurs achats en ligne pour sa commodité, son accessibilité et son large éventail d'options. Cependant, il
-              est essentiel de comprendre les enjeux de sécurité associés à l'achat en ligne pour protéger vos informations personnelles et financières.
+              Acheter en ligne s’est démocratisé car plus simple, plus rapide, plus de pièces disponibles et de solde… Les hackeurs le savent et n’ont aucun scrupule pour tromper et arnaquer les
+              clients tout en volant leurs données bancaires. Il faut faire connaître les bonnes pratiques.
             </p>
-            <a href="#"><button>More</button></a>
+            <a href="/src/page/online-shopping.html"><button>More</button></a>
           </div>
 
           <div class="astuce">
             <div class="icon-astuce" style="background-color: rgb(209, 10, 126)"><i class="fi fi-rr-share"></i></div>
             <h3>Réseaux sociaux</h3>
             <p>
-              Les réseaux sociaux ont transformé la manière dont nous interagissons, communiquons et partageons des informations dans notre société moderne. Cependant, il est important de reconnaître
-              que l'utilisation des réseaux sociaux comporte également des dangers potentiels. Les réseaux sociaux peuvent être une source de préoccupations liées à la vie privée, à la sécurité en
-              ligne, à la désinformation, à la cyberintimidation, à la dépendance et à d'autres problèmes psychologiques. Alors que les réseaux sociaux offrent de nombreux avantages, il est crucial de
-              comprendre les risques associés à leur utilisation et d'adopter des pratiques responsables pour naviguer en toute sécurité dans cet environnement numérique complexe.
+              Les réseaux sociaux sont utilisés par tous pour la communication sur des événements, des nouveautés, des marques… Il est presque obligatoire d’avoir un compte pour pouvoir suivre vos
+              groupes préférés, etc… Il faut cependant savoir les pièges posés par les hackeurs.
             </p>
-            <a href="#"><button>More</button></a>
+            <a href="/src/page/social-network.html"><button>More</button></a>
           </div>
 
           <div class="astuce">
             <div class="icon-astuce" style="background-color: rgb(2, 107, 228)"><i class="fi fi-rr-wifi"></i></div>
-            <h3>Wifi publique</h3>
+            <h3>Wifi public</h3>
             <p>
-              Les réseaux Wi-Fi publics sont largement répandus dans notre société connectée, offrant la commodité de rester en ligne lors de déplacements. Cependant, ils sont souvent moins sécurisés
-              que les réseaux domestiques ou d'entreprise, ce qui expose à des risques pour la confidentialité des données. Les hackers et les cybercriminels peuvent exploiter ces vulnérabilités pour
-              accéder à vos informations personnelles, voler vos données sensibles ou mener d'autres types d'attaques malveillantes. Il est donc crucial de prendre des mesures de sécurité appropriées
-              pour protéger vos informations confidentielles lors de l'utilisation de réseaux Wi-Fi publics.
+              Le wifi public peut être un nid à virus déposé par des hackeurs, ils peuvent aussi écouter les communications s’ils l’ont mis en place ou en ont pris possession. Il faut faire attention
+              à ce que vous utilisez et quelles sont vos actions faites en y étant connecté.
             </p>
-            <a href="#"><button>More</button></a>
+            <a href="/src/page/wifi.html"><button>More</button></a>
           </div>
 
           <div class="astuce">
             <div class="icon-astuce" style="background-color: rgb(101, 2, 231)"><i class="fi fi-rr-computer"></i></div>
             <h3>PC libre service</h3>
             <p>
-              Les PC en libre-service, également appelés kiosques informatiques publics, sont couramment utilisés dans les lieux publics. Cependant, leur utilisation comporte des dangers potentiels
-              tels que le piratage, le vol d'identité et les logiciels malveillants. Il est important de prendre des mesures de sécurité appropriées pour protéger vos données lors de l'utilisation de
-              ces PC en libre-service.
+              L'utilisation d'un ordinateur public présente des menaces potentielles pour la sécurité et la confidentialité de vos données. Il faut être vigilant aux risques et aux bonnes pratiques
+              pour rester en sécurité pour vos données, vos mots de passe, etc…
             </p>
-            <a href="#"><button>More</button></a>
+            <a href="/src/page/public-computer.html"><button>More</button></a>
           </div>
 
           <div class="astuce">
             <div class="icon-astuce" style="background-color: rgb(0, 172, 114)"><i class="fi fi-rr-download"></i></div>
             <h3>Téléchargement logiciel</h3>
             <p>
-              Le téléchargement en ligne est une pratique courante pour accéder à des contenus numériques, mais comporte des dangers potentiels tels que les logiciels malveillants, les contenus
-              illégaux et les risques juridiques. Il est important de prendre des mesures de sécurité appropriées et de respecter les lois en vigueur lors du téléchargement en ligne.
+              Le téléchargement de logiciels ou d’applications peut présenter des risques tels que l'installation virus ou logiciels malveillants. Les hackeurs peuvent parfois glisser des dossiers
+              vérolés pour récupérer vos données. On peut les reconnaître et les contrer.
             </p>
-            <a href="#"><button>More</button></a>
+            <a href="/src/page/download.html"><button>More</button></a>
           </div>
         </div>
       </div>
@@ -137,15 +142,23 @@
       <footer>
         <div class="footer-content">
           <h3><span>S</span>ensi Student</h3>
-          <p>
-            Copyright © 2023 All Rights Reserved by Ynov Challenge 48h.
-          </p>
+          <p>Copyright © 2023 All Rights Reserved by Ynov Challenge 48h.</p>
           <ul class="socials">
-            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="./src/resource/image/facebook.png" alt=""></a></li>
-            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="./src/resource/image/github.png" alt=""></a>
-            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="./src/resource/image/instagram.png" alt=""></a></li>
-            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="./src/resource/image/linkedin.png" alt=""></a></li>
-            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="./src/resource/image/twitter.png" alt=""></a> </li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="./src/resource/image/facebook.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="./src/resource/image/github.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="./src/resource/image/instagram.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="./src/resource/image/linkedin.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="./src/resource/image/twitter.png" alt="" /></a>
+            </li>
           </ul>
         </div>
       </footer>
