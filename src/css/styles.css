@@ -1,17 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
-:root{
+:root {
   --accentuation: #6C5CE7;
 }
-body{
+
+body {
   overflow-x: hidden;
 }
-*{
-  padding:0;
+
+* {
+  padding: 0;
   margin: 0;
   font-family: 'Poppins', sans-serif;
 }
-header{
+
+header {
   position: fixed;
   display: flex;
   justify-content: center;
@@ -20,34 +23,38 @@ header{
   color: #000;
   font-size: 20px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-  height: 98px;
+  height: 90px;
   width: 100%;
   z-index: 999;
 }
-  
-header a{
+
+header a {
   color: #6C5CE7;
   text-decoration: none;
   margin: 10px;
 }
 
-div p{
+div p {
   margin-bottom: 20px;
 }
 
-div h1{
+p {
+  text-align: justify;
+}
+
+div h1 {
   text-decoration: underline;
   text-decoration-color: var(--accentuation);
   margin-left: 2rem;
   margin-top: 2rem;
 }
 
-h3{
+h3 {
   color: var(--accentuation);
   margin-bottom: 10px;
 }
-  
-#links{
+
+#links {
   display: flex;
   font-size: 0.9rem;
   text-decoration: none;
@@ -76,13 +83,11 @@ header img {
   margin-left: 2rem;
   object-fit: cover;
   width: 170px;
-  margin-top: 8px;
 }
 
 .flex-container {
   display: flex;
   flex-direction: row;
-  text-justify: auto;
 }
 
 .flex-column {
@@ -111,12 +116,12 @@ header img {
   color: rgb(2, 105, 2);
 }
 
-#baniere{
+#baniere {
   width: 102%;
-  height: auto; 
-  display: block; 
-  margin: -8px; 
-  padding-top : 80px;
+  height: auto;
+  display: block;
+  margin: -8px;
+  padding-top: 80px;
 }
 
 .bottom {
@@ -130,21 +135,4 @@ header img {
   padding-left: 40px;
   padding-right: 40px;
   text-justify: auto;
-  width: 102%;
-  height: auto; 
-  display: block; 
-  margin: -8px; 
-  padding-top : 80px;
-}
-
-ul img{
-  width: 20%;
-}
-.socials{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
