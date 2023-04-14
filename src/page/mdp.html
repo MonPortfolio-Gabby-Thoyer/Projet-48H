@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <link rel="icon" href="/src/resource/image/1.png" />
     <meta charset="utf-8">
@@ -9,11 +8,10 @@
 </head>
 <header>
     <img src="../resource/image/E.png">
-
     <div id="links">
         <a href="../../index.html" class="redirection_link">Accueil</a>
         <a href="phishing.html" class="redirection_link">Phishing</a>
-        <a href="mdp.html" class="redirection_link">Mot de passe</a>
+        <a id="active-link" href="mdp.html" class="redirection_link">Mot de passe</a>
         <a href="stockage.html" class="redirection_link">Stockage</a>
         <a href="online-shopping.html" class="redirection_link">Achat en ligne</a>
         <a href="social-network.html" class="redirection_link">Réseaux sociaux</a>
@@ -156,6 +154,22 @@
             vite par vos propres mots de passe que vous contrôlez.</p>
         </div>
     </div>
+    <div class="mini-container"  style="  width: 100%; display: flex; justify-content: center; align-items: center; border-top: 1px solid #232323; background-color: #232323;">
+        <div class="password-card" style="  width: 400px; height: 300px; margin: 20px 0 100px 0;">
+          <div class="password">
+            <h1 style="color:white; text-decoration: none;">Password Strength</h1>
+          <input id="password" type="text" value="" name="password" class="form-control" onkeyup="isGood(this.value)" style="margin-top: 20px; width: 90%; border-radius: 10px;height: 30px;" />
+                <small class="help-block" id="password-text"  style="color:white;"></small>
+          </div>
+          <div class="password" style="color:white; margin-top: 20px;">
+            <ul>
+              <li>Uppercase Letters</li>
+              <li>Lowercase Letters</li>
+              <li>Numbers</li>
+              <li>Special Character</li>
+            </ul>
+          </div>
+        </div>
     <script>
         function isGood(password) {
           let password_strength = document.getElementById("password-text");
@@ -188,13 +202,13 @@
             case 0:
             case 1:
             case 2:
-              strength = "<small class='progress-bar bg-danger' style='width: 40%'>Weak</small>";
+              strength = "<small class='progress-bar bg-danger' style='width: 40%'><br>Weak</small>";
               break;
             case 3:
-              strength = "<small class='progress-bar bg-warning' style='width: 60%'>Medium</small>";
+              strength = "<small class='progress-bar bg-warning' style='width: 60%'><br>Medium</small>";
               break;
             case 4:
-              strength = "<small class='progress-bar bg-success' style='width: 100%'>Strong</small>";
+              strength = "<small class='progress-bar bg-success' style='width: 100%'><br>Strong</small>";
               break;
 
           }

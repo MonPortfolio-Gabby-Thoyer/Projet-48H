@@ -77,6 +77,10 @@ header img {
   width: 170px;
 }
 
+#active-link{
+  border-bottom: 3px solid var(--accentuation);
+}
+
 /* ===============================CONTAINER=============================== */
 .container {
   background: rgb(255, 255, 255);
@@ -243,3 +247,4 @@ footer {
 .progress-bar {
   border-radius: 5px;
 }
+
