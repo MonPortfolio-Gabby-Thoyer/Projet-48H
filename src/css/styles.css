@@ -92,13 +92,6 @@ h4{
     font-size: large;
 }
 
-.message {
-    font-family: 'Poppins', sans-serif;
-    padding-left: 150px;
-    padding-right: 150px;
-    text-justify: auto;
-}
-
 .title {
     font-family: 'Poppins', sans-serif;
     font-size: larger;
@@ -111,3 +104,16 @@ h4{
       flex-direction: column;
     }
   }
+
+.bottom {
+    border-top: 2px solid rgb(170, 170, 170);
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.message {
+    font-family: 'Poppins', sans-serif;
+    padding-left: 150px;
+    padding-right: 150px;
+    text-justify: auto;
+}
