@@ -33,7 +33,6 @@
         <a href="download.html" class="redirection_link">Téléchargement</a>
     </div>
 </header>
-
 <body>
     <img id="baniere" src="../resource/image/que_faire_en_cas_de_phishing_header.png">
     <div>
@@ -215,20 +214,17 @@
             case 0:
             case 1:
             case 2:
-              strength = "<small class='progress-bar bg-danger' style='width: 40%'><br>Weak</small>";
+              strength = "<small style='font-size: 15px'><br>Temps de craquage: quelques secondes</small>";
               break;
             case 3:
-              strength = "<small class='progress-bar bg-warning' style='width: 60%'><br>Medium</small>";
+              strength = "<small style='font-size: 15px'><br>Temps de craquage: quelques minutes</small>";
               break;
             case 4:
-              strength = "<small class='progress-bar bg-success' style='width: 100%'><br>Strong</small>";
+              strength = "<small style='font-size: 15px'><br>Temps de craquage: quelques siècles ou décénies fin on sait pas vrmt enfait</small>";
               break;
 
           }
-          password_strength.innerHTML = strength;
-
-  }
+          password_strength.innerHTML = strength;}
       </script>
 </body>
-
 </html>
