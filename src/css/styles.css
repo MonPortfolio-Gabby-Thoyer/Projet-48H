@@ -136,3 +136,7 @@ header img {
   padding-right: 40px;
   text-justify: auto;
 }
+
+#active-link{
+  border-bottom: 3px solid var(--accentuation);
+}
