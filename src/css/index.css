@@ -77,6 +77,9 @@ header img {
   width: 170px;
 }
 
+#active-link{
+  border-bottom: 3px solid var(--accentuation);
+}
 
 /* ===============================CONTAINER=============================== */
 .container {
@@ -237,3 +240,11 @@ footer {
   height: 35px;
   width: 35px;
 }
+.password{
+  width: 100%;
+  margin: auto;
+}
+.progress-bar {
+  border-radius: 5px;
+}
+
