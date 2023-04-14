@@ -22,6 +22,10 @@ a{
     margin: 10px;
 }
 
+h3{
+    color: #6C5CE7;
+}
+
 #links{
     display: flex;
     font-size: 20px;
@@ -64,18 +68,21 @@ a{
     flex-direction: column;
     text-justify: auto;
     max-width: 800px;
-    padding: 80px;
+    padding: 60px;
+    padding-top: 20px;
     text-justify: auto;
-  }
-  
-  .flex-item {
-    background-color: #f1f1f1;
-    padding: 30px;
-    flex: 50%;
+    font-family: 'Poppins', sans-serif;
   }
 
-@media (max-width: 800px) {
-    .flex-container {
-      flex-direction: column;
-    }
-  }
+.introduction {
+    font-family: 'Poppins', sans-serif;
+    padding-left: 200px;
+    padding-right: 200px;
+    text-align: center;
+    color: green;
+}
+
+.astuce {
+    font-family: 'Poppins', sans-serif;
+    color: green;
+}
