@@ -23,6 +23,7 @@ Voici les principales fonctionnalités que vous pouvez retrouver sur ce site vit
 
 - HTML5 : la dernière version du langage de balisage utilisé pour structurer le contenu des pages web.
 - CSS3 : pour la mise en forme et la présentation du contenu HTML.
+- JavaScript 
 
 ## Déploiement
 - Netlify 
