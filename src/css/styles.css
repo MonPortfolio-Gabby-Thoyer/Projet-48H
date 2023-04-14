@@ -79,10 +79,25 @@ h3{
     padding-left: 200px;
     padding-right: 200px;
     text-align: center;
-    color: green;
+    font-size: large;
 }
 
 .astuce {
     font-family: 'Poppins', sans-serif;
     color: green;
+}
+
+h4{
+    font-family: 'Poppins', sans-serif;
+    padding-left: 120px;
+    font-size: large;
+}
+
+.message {
+    font-family: 'Poppins', sans-serif;
+    padding-left: 150px;
+    padding-right: 150px;
+    text-justify: auto;
+    
+    
 }
